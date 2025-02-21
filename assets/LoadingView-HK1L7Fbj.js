@@ -1,0 +1,1 @@
+import{b as s,f as t,a,h as n}from"./index-d3JKfdNj.js";const c={},o={class:"fill-xy flx-x center-all"};function l(r,e){return a(),t("div",o,e[0]||(e[0]=[n("div",{class:"spinner",style:{width:"4em",height:"4em"}},null,-1)]))}const d=s(c,[["render",l],["__scopeId","data-v-f8bca1b1"]]);export{d as default};
