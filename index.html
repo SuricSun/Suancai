@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vite App</title>
+  <script type="module" crossorigin src="/assets/index-C2uRsBr-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-B7Fw_4pU.css">
+</head>
+<body>
+<script>
+  /**
+   * Just at the start of the body element, set the theme css to avoid glitch
+   */
+  function initThemeMode() {
+    let v = localStorage.getItem('theme')
+    if (!v) {
+      // * Default to light
+      v = 'light-mode'
+    }
+    document.body.classList.add(v)
+    localStorage.setItem('theme', v)
+  }
+
+  function initFontStyle() {
+    let v = localStorage.getItem('font')
+    if (true) {
+      if (/Mobi|Android/i.test(navigator.userAgent)) {
+        // 当前是手机设备
+        v = 'small-font-size'
+        v = 'normal-font-size'
+
+      } else {
+        // 当前不是手机设备
+        // * Default to normal
+        v = 'normal-font-size'
+      }
+    }
+    document.body.classList.add(v)
+    localStorage.setItem('font', v)
+  }
+
+  initThemeMode()
+  initFontStyle()
+</script>
+<div id="app"></div>
+</body>
+</html>
